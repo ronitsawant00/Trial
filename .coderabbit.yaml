@@ -1,0 +1,35 @@
+language: "en-US"
+
+reviews:
+  profile: "helpful"
+  high_level_summary: true
+  drafts: false
+  auto_review:
+    enabled: true
+  severity_threshold: "medium"
+
+rules:
+  require_unit_tests: true
+  suggest_security_fixes: true
+  suggest_performance_improvements: true
+  comment_style: "inline"
+
+files:
+  include:
+    - "src/**/*.java"
+    - "pom.xml"
+  exclude:
+    - "**/build/**"
+    - "**/target/**"
+    - "**/*.md"
+
+static_analysis:
+  linters:
+    - "java"
+
+test_guidance:
+  framework: "junit"
+  coverage_expectation: "function-level"
+
+rate_limits:
+  max_comments: 50
