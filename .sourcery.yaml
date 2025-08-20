@@ -1,5 +1,5 @@
 project:
-  name: "java-ai-review-showcase"
+  name: "Trial"
 
 reviews:
   summarize_changes: true
