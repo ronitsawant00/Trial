@@ -1,7 +1,7 @@
 # This workflow runs a code review when a PR is opened to master
 # and again on every push to the master branch.
 
-name: Code Review on PR and Push
+name: Sourcery Code Review on PR and Push
 
 on:
   push:
