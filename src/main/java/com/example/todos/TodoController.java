@@ -4,7 +4,7 @@
 public class TodoController {
   private final TodoService s;
 
-  public TodoController() { this.s = new TodoService(new TodoRepository()); }
+  public TodoController(TodoService s) { this.s = s; }
 
   @GetMapping public List<Todo> g() { return s.list(); }
 

@@ -4,12 +4,7 @@
 name: Sourcery Code Review on PR and Push
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
-    branches:
-      - master
 
 jobs:
   sourcery-review:
