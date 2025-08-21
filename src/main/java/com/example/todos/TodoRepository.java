@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class TodoRepository {
-  private final Map<Long, Todo> store = new ConcurrentHashMap<>();
+  private final ConcurrentHashMap<Long, Todo> store = new ConcurrentHashMap<>();
   private final AtomicLong seq = new AtomicLong();
 
   public List<Todo> findAll() { return new ArrayList<>(store.values()); }
